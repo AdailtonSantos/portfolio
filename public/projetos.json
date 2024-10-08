@@ -1,0 +1,26 @@
+[
+    {
+        "tipo": "Site",
+        "nome": "Soluciona Assessoria",
+        "thumb": "solucionasite.gif",
+        "link": "https://soluciona.inf.br"
+    },
+    {
+        "tipo": "Site",
+        "nome": "Cedray",
+        "thumb": "cedraysite.gif",
+        "link": "https://cedray.com.br"
+    },
+    {
+        "tipo": "Site",
+        "nome": "Projeto Unique",
+        "thumb": "projetouniquesite.gif",
+        "link": "https://site.projetounique.ind.br"
+    },
+    {
+        "tipo": "Site",
+        "nome": "Loscrap",
+        "thumb": "loscrapsite.gif",
+        "link": "https://loscrap.ind.br"
+    }
+]
