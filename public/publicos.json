@@ -1,0 +1,29 @@
+[
+    {
+        "tipo": "Site",
+        "nome": "Soluciona Assessoria",
+        "description": "O front-end foi desenvolvido inteiramente com o VueJS utilizando o Vue Router e Transitions. <br>Foi aplicado um back-end para listagem e inserção de posts no blog, utilizando PHP e Mysql.","thumb": "solucionasite.gif",
+        "link": "https://soluciona.inf.br"
+    },
+    {
+        "tipo": "Site",
+        "nome": "Cedray",
+        "description": "O front-end foi desenvolvido inteiramente com o VueJS utilizando o Vue Router. <br>Desenvolvi um sistema parecido com um e-commerce, com a possibilidade de selecionar a variação do produto e a quantidade, mandar para o carrinho e solicitar um orçamento via WhatsApp com os produtos selecionados.",
+        "thumb": "cedraysite.gif",
+        "link": "https://cedray.com.br"
+    },
+    {
+        "tipo": "Site",
+        "nome": "Projeto Unique",
+        "description": "Front-end desenvolvido com Handlebars pois desenvolvi antes de iniciar os estudos em VueJs.<br> No backend utilizei NodeJS e desenvolvi um ChatBot para o WhatsApp usado no projeto. Além disso, o projeto possui um formulário que as pessoas interessadas podem preencher e esses dados são salvos em um banco de dados Mysql.",
+        "thumb": "projetouniquesite.gif",
+        "link": "https://site.projetounique.ind.br"
+    },
+    {
+        "tipo": "Site",
+        "nome": "Loscrap",
+        "description": "Front-end desenvolvido com HTML e CSS puro, pois desenvolvi antes de iniciar os estudos em VueJs",
+        "thumb": "loscrapsite.gif",
+        "link": "https://loscrap.ind.br"
+    }
+]

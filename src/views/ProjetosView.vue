@@ -1,14 +1,35 @@
 <template>
   <section>
-    <section class="projetos-publicos">
+
+    <section class="projetos">
       <h1>PROJETOS - Públicos</h1>
-      <div class="projects-list">
-        <div v-for="project of projects" :key="project.name">
-          <img :src="project.thumb" alt="site soluciona"><br>
+      <div class="public-projects-list">
+        <div v-for="project of publicProjects" :key="project.name">
+          <img :src="project.thumb" alt="site soluciona">
           <div>
             <span>{{ project.tipo }}</span>
             <p>{{ project.nome }}</p>
-            <a :href="project.link" target="_blank"><button>Acessar</button></a>
+            <p style="font-size: 0.8em;" v-html="project.description"></p>
+            <a :href="project.link" target="_blank" style="margin-top: auto;"><button>Acessar</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr style="border: 0; background-color: rgb(43 40 40); height: 1px;">
+    <section class="projetos">
+      <h1>PROJETOS - Privados</h1>
+      <div class="private-projects-list">
+        <div v-for="project of privateProjects" :key="project.name" class="info">
+          <video controls>
+            <source :src="project.video" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div>
+            <span>{{ project.tipo }}</span>
+            <p>{{ project.nome }}</p>
+            <hr style="border: 0; background-color: rgb(43 40 40); height: 1px;">
+            <p>{{ project.description }}</p>
           </div>
         </div>
       </div>
@@ -23,12 +44,17 @@ export default {
   },
   data() {
     return {
-      projects: []
+      publicProjects: [],
+      privateProjects: []
     }
   },
   mounted() {
-    fetch('projetos.json').then((response) => response.json()).then((response) => {
-      this.projects = response
+    fetch('publicos.json').then((response) => response.json()).then((response) => {
+      this.publicProjects = response
+    })
+
+    fetch('privados.json').then((response) => response.json()).then((response) => {
+      this.privateProjects = response
     })
   }
 }
@@ -36,60 +62,101 @@ export default {
 </script>
 
 <style scoped>
-.projetos-publicos {
+.projetos {
   color: white;
   font-size: 1.2em;
-  margin-top: 60px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin: 60px 150px;
 }
 
-.projetos-publicos h1 {
+.projetos h1 {
   color: #5670E7;
   font-size: 2em;
   margin-top: 0;
 }
 
-.projects-list {
+.public-projects-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: flex-start;
   gap: 100px;
 }
 
-.projects-list div {
+.public-projects-list div {
+  display: flex;
   background-color: white;
   border-radius: 15px;
 }
-.projects-list div div {
-  padding: 0 15px;
+
+.public-projects-list div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 15px;
+  padding-top: 35px;
+  width: 100%;
 }
 
-.projects-list img {
-  border-radius: 15px;
+.public-projects-list img {
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
-  width: 400px;
+  width: 550px;
+  margin-bottom: 15px;
 }
 
-.projects-list span {
+.public-projects-list span {
   color: #E5C3C3;
 }
 
-.projects-list p {
+.public-projects-list p {
   color: black;
   margin-top: 0;
   margin-bottom: 15px;
 }
 
-.projects-list button {
+.public-projects-list button {
   background-color: #5670E7;
   color: white;
   text-align: center;
   border: 0;
   border-radius: 5px;
-  padding: 2px 0;
+  padding: 10px 0;
   width: 100%;
   margin-bottom: 15px;
   cursor: pointer;
+  transition: all .2s ease;
+  border: 1px solid #5670E7;
+}
+
+.public-projects-list button:hover {
+  background-color: white;
+  color: black;
+}
+
+.private-projects-list .info  {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.private-projects-list video {
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.private-projects-list span {
+  color: #E5C3C3;
+  font-size: 0.9em;
+}
+
+.private-projects-list p:nth-child(2) {
+  margin-top: 10px;
+  color: #E5C3C3;
+}
+
+.private-projects-list p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 28px;
 }
 </style>

@@ -1,0 +1,14 @@
+[
+    {
+        "tipo": "Sistema",
+        "nome": "Agendador de mensagens - Sistema interno utilizado na empresa atual em que trabalho",
+        "description": "Um sistema desenvolvido para agendar mensagens do WhatsApp, utilizando uma API de envios. O sistema se integra com um sistema de chat para buscar os contatos e as mensagens enviadas são exibidas no sistema de chat, para a continuidade da conversa.",
+        "video": "agendador.mp4"
+    },
+    {
+        "tipo": "Sistema",
+        "nome": "Sistema de Leilões - Desenvolvido para cliente",
+        "description": "Um sistema para gerenciamento de leilões, com uma agenda interativa para as visualizar as datas dos eventos. A agenda foi criada com o FullCalendar e desenvolvi um filtro para cada tipo de evento.",
+        "video": "leiloes.mp4"
+    }
+]
