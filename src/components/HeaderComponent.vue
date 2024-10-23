@@ -3,7 +3,7 @@
     <router-link class="logo" to="/"><img src="logo.png" alt="logo-name-adailton-santos"></router-link>
     <router-link to="/sobre">Sobre Mim</router-link>
     <router-link to="/projetos">Projetos</router-link>
-    <router-link to="/curriculo">Curriculo</router-link>
+    <a href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view?usp=sharing" target="_blank">Curriculo</a>
   </header>
 </template>
 
