@@ -8,8 +8,11 @@
           Trabalho há 2 anos com desenvolvimento web, focado no desenvolvimento de sites, sistemas e automações com
           Puppeteer. <br><br>
 
-          Para os próximos anos, pretendo me especializar em C# e estou no início dos meus estudos em Engenharia Reversa
-          em Softwares.</p>
+          Para os próximos anos, pretendo me especializar em Rust e estou no início dos meus estudos em Engenharia Reversa
+          em Softwares. <br><br>
+        
+          Meus principais projetos foram internos para a empresa em que trabalho. Foram trabalhos de WebScraping com Puppeteer
+          integrando com o nosso CRM via API REST para o armazenamento e filtragem dos dados.</p>
       </section>
       <div class="info">
         <p>São Paulo / SP</p>
@@ -56,7 +59,7 @@ export default {
   font-weight: 300;
   margin-left: 150px;
   max-width: 60ch;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .principal h1 {
@@ -87,5 +90,40 @@ export default {
   color: white;
   bottom: 40px;
   right: 150px;
+}
+
+@media (max-width: 1598px) {
+  .scroll-gif {
+    margin-right: 5vw;
+  }
+}
+
+@media (max-width: 1307px) {
+  .scroll-gif {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1061px) {
+  .general {
+    height: initial;
+    align-items: initial;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 0.9em;
+  }
+
+  .principal {
+    margin-left: 0;
+  }
+
+  .info {
+    position: initial;
+    color: white;
+    text-align: center;
+    margin-top: 50px
+  }
 }
 </style>

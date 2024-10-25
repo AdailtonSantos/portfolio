@@ -132,7 +132,7 @@ export default {
   color: black;
 }
 
-.private-projects-list .info  {
+.private-projects-list .info {
   display: flex;
   gap: 50px;
   margin-bottom: 15px;
@@ -158,5 +158,37 @@ export default {
   font-size: 0.9em;
   margin-bottom: 15px;
   line-height: 28px;
+}
+
+@media (max-width: 1365px) {
+  .public-projects-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .public-projects-list div {
+    flex-direction: column;
+  }
+
+  .public-projects-list div div {
+    width: fit-content;
+  }
+
+  .public-projects-list p{
+    max-width: 50ch;
+  }
+}
+
+@media (max-width: 1365px) {
+  .projetos {
+    margin: 60px 15px;
+  }
+  .public-projects-list {
+    justify-content: center;
+  }
+
+  .public-projects-list img {
+    max-width: 550px;
+  }
 }
 </style>

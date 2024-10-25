@@ -1,6 +1,7 @@
 <template>
   <section @wheel="handleScroll">
     <HeaderComponent />
+    <MobileHeaderComponent />
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <Component :is="Component" />
@@ -12,11 +13,13 @@
 <script>
 // @ is an alias to /src
 import HeaderComponent from '@/components/HeaderComponent.vue'
+import MobileHeaderComponent from '@/components/MobileHeaderComponent.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    MobileHeaderComponent,
   },
   data() {
     return {

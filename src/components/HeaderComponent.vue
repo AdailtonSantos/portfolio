@@ -29,4 +29,11 @@ export default {
     color: white;
     text-decoration: none;
   }
+
+  @media (max-width: 959px) {
+    header {
+      display: none;
+    }
+  }
+
 </style>
