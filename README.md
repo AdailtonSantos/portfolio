@@ -1,1 +1,1 @@
-Portfolio pessoal desenvolvido com Vue3. Nele conto um pouco sobre mim e exibo alguns projetos que desenvolvi profissionalmente.
+Portfolio pessoal desenvolvido com Vue3. Nele é possível ver minha Stack de desenvolvimento e os projetos que desenvolvi profissionalmente.
