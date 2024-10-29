@@ -1,10 +1,7 @@
 <template>
   <section>
-    <i
-      class="bi bi-x-circle"
-      style="position: absolute; left: 15px; top: 15px; font-size: 1.8em"
-      @click="this.$emit('toggleVisibility')"
-    ></i>
+    <i class="bi bi-x-circle" style="position: absolute; left: 15px; top: 15px; font-size: 1.8em"
+      @click="this.$emit('toggleVisibility')"></i>
     <img src="logo.png" alt="" />
     <div class="menu">
       <span><a href="/">INÍCIO</a></span>
@@ -17,7 +14,9 @@
     <p>SOCIAL</p>
     <div class="social">
       <a href="https://www.linkedin.com/in/adailton-aparecido-dos-santos-751bb922b/" target="_blank"><i
-        class="bi bi-linkedin"></i></a>
+          class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/AdailtonSantos" target="_blank"><i
+          class="bi bi-github"></i></a>
     </div>
   </section>
 </template>
@@ -36,6 +35,7 @@ export default {
 section {
   display: none;
 }
+
 @media screen and (max-width: 1170px) {
   section {
     display: flex;
@@ -54,6 +54,7 @@ section {
     padding: 35px 15px;
     box-shadow: 0 4px 4px 0 black;
   }
+
   section img {
     width: 150px;
     margin: 20px auto;
@@ -75,21 +76,25 @@ section {
     text-align: center;
     font-weight: 500;
   }
+
   section .menu a {
     color: black;
   }
+
   section p {
     font-size: 2em;
     margin: 0;
     font-weight: 500;
   }
+
   section .social {
     display: flex;
     gap: 4px;
     color: black;
     font-size: 1.5em;
   }
-  section .social a{
+
+  section .social a {
     color: black;
   }
 }

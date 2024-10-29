@@ -4,6 +4,7 @@
     <router-link to="/sobre">Sobre Mim</router-link>
     <router-link to="/projetos">Projetos</router-link>
     <a href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view?usp=sharing" target="_blank">Curriculo</a>
+    <a href="https://github.com/AdailtonSantos" target="_blank">GitHub</a>
   </header>
 </template>
 
