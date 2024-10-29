@@ -7,12 +7,9 @@
 
           Trabalho há 2 anos com desenvolvimento web, focado no desenvolvimento de sites, sistemas e automações com
           Puppeteer. <br><br>
-
-          Para os próximos anos, pretendo me especializar em Rust e estou no início dos meus estudos em Engenharia Reversa
-          em Softwares. <br><br>
-        
-          Meus principais projetos foram internos para a empresa em que trabalho. Foram trabalhos de WebScraping com Puppeteer
-          integrando com o nosso CRM via API REST para o armazenamento e filtragem dos dados.</p>
+          
+          Meus principais projetos foram trabalhos de WebScraping com Puppeteer
+          integrando com um CRM via API REST para o armazenamento e filtragem dos dados.</p>
       </section>
       <div class="info">
         <p>São Paulo / SP</p>
