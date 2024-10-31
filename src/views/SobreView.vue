@@ -16,10 +16,6 @@
         <p>adailtonaparecido69@gmail.com</p>
       </div>
     </div>
-    <div class="scroll-gif">
-      <img src="scrolldown.gif" alt="gif scroll down">
-      <p>Use o Scroll para navegar</p>
-    </div>
   </section>
 </template>
 <script>
