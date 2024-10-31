@@ -1,5 +1,5 @@
 <template>
-  <section @wheel="handleScroll">
+  <section>
     <HeaderComponent />
     <MobileHeaderComponent />
     <router-view v-slot="{ Component }">
@@ -24,50 +24,10 @@ export default {
   data() {
     return {
       routes: ['/', '/sobre', '/projetos'],
-      isMobile: false
     }
   },
-  mounted() {
-    this.isMobile = this.checkIfMobile();
-  },
-  methods: {
-    handleScroll(event) {
-      if (!this.isMobile && this.$route.path !== '/projetos') {
-        if (event.deltaY > 0) {
-          this.goToNextPage();
-        } else if (event.deltaY < 0) {
-          this.goToPreviousPage();
-        }
-      }
-    },
-    goToNextPage() {
-      const currentRoute = this.$route.path;
-      const currentIndex = this.routes.indexOf(currentRoute);
-
-      if (currentIndex !== -1 && currentIndex < this.routes.length - 1) {
-
-        const nextRoute = this.routes[currentIndex + 1];
-        this.$router.push(nextRoute);
-      } else {
-
-        this.$router.push(this.routes[0]);
-      }
-    },
-    goToPreviousPage() {
-      const currentRoute = this.$route.path;
-      const currentIndex = this.routes.indexOf(currentRoute);
-
-      if (currentIndex !== -1 && currentIndex !== 0) {
-        const nextRoute = this.routes[currentIndex - 1];
-        this.$router.push(nextRoute);
-      } else {
-        this.$router.push(this.routes[this.routes.length - 1]);
-      }
-    },
-    checkIfMobile() {
-      return window.innerWidth <= 768;
-    }
-  }
+  mounted() {},
+  methods: {}
 }
 
 </script>
