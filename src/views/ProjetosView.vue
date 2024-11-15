@@ -9,7 +9,7 @@
           <div>
             <span>{{ project.tipo }}</span>
             <p>{{ project.nome }}</p>
-            <p style="font-size: 0.8em;" v-html="project.description"></p>
+            <p style="font-size: 0.8em;line-height: 20px;" v-html="project.description"></p>
             <a :href="project.link" target="_blank" style="margin-top: auto;"><button>Acessar</button></a>
           </div>
         </div>

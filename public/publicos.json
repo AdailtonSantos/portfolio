@@ -1,6 +1,13 @@
 [
     {
         "tipo": "Site",
+        "nome": "Músicas Brasileiras e suas Vertentes Artísticas",
+        "description": "Projeto desenvolvido na faculdade para a disciplina de projeto prático.<br> O projeto consiste em divulgar a exposição que um grupo de alunos de uma faculdade realizou. <br>No site, podemos encontrar a descrição do projeto, os artistas que participaram e as obras que cada um desenvolveu para o projeto.<br> Ele foi desenvolvido com HTML, CSS e Javascript puro, pois foi um projeto em grupo, então para encaixar no nível técnico de todos, fizemos sem framework.",
+        "thumb": "gifsProjetos/musicasBrasileiras.gif",
+        "link": "https://musicas-brasileiras.vercel.app/"
+    },
+    {
+        "tipo": "Site",
         "nome": "Soluciona Assessoria",
         "description": "O front-end foi desenvolvido inteiramente com o VueJS utilizando o Vue Router e Transitions. <br>Foi aplicado um back-end para listagem e inserção de posts no blog, utilizando PHP e Mysql.",
         "thumb": "gifsProjetos/solucionasite.gif",
