@@ -1,47 +1,49 @@
 <template>
   <section>
-
     <section class="projetos">
       <h1>PROJETOS - Públicos</h1>
       <div class="public-projects-list">
-        <div v-for="project of publicProjects" :key="project.name">
+        <div v-for="project of publicProjects" :key="project.name" class="project-card">
           <img :src="project.thumb" alt="site soluciona">
-          <div>
+          <div class="project-content">
             <span>{{ project.tipo }}</span>
-            <p>{{ project.nome }}</p>
-            <p style="font-size: 0.8em;line-height: 20px;" v-html="project.description"></p>
-            <a :href="project.link" target="_blank" style="margin-top: auto;"><button>Acessar</button></a>
+            <p class="project-title">{{ project.nome }}</p>
+            <p class="project-description" v-html="project.description"></p>
+            <a :href="project.link" target="_blank" class="project-link">
+              <button>Acessar</button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <hr style="border: 0; background-color: rgb(43 40 40); height: 1px;">
-    <section class="projetos">
+    <hr class="divider">
+
+    <section class="projetos" style="padding-bottom: 100px;">
       <h1>PROJETOS - Privados</h1>
       <div class="private-projects-list">
         <div v-for="project of privateProjects" :key="project.name" class="info">
-          <video controls>
-            <source :src="project.video" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div>
+          <div class="video-container">
+            <video controls>
+              <source :src="project.video" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project-details">
             <span>{{ project.tipo }}</span>
-            <p>{{ project.nome }}</p>
-            <hr style="border: 0; background-color: rgb(43 40 40); height: 1px;">
-            <p>{{ project.description }}</p>
+            <p class="project-name">{{ project.nome }}</p>
+            <hr style="width: 100%;">
+            <p v-html="project.description" class="project-description"></p>
           </div>
         </div>
       </div>
     </section>
   </section>
 </template>
-<script>
 
+<script>
 export default {
   name: 'ProjetosView',
-  components: {
-  },
   data() {
     return {
       publicProjects: [],
@@ -52,143 +54,190 @@ export default {
     fetch('publicos.json').then((response) => response.json()).then((response) => {
       this.publicProjects = response
     })
-
     fetch('privados.json').then((response) => response.json()).then((response) => {
       this.privateProjects = response
     })
   }
 }
-
 </script>
-
 <style scoped>
 .projetos {
   color: white;
-  font-size: 1.2em;
-  margin: 60px 150px;
+  font-size: clamp(1rem, 2vw, 1.2em);
+  margin: clamp(20px, 5vw, 60px) clamp(15px, 10vw, 150px);
 }
 
 .projetos h1 {
   color: #5670E7;
-  font-size: 2em;
+  font-size: clamp(1.5em, 3vw, 2em);
   margin-top: 0;
+  text-align: left;
 }
 
+.divider {
+  border: 0;
+  background-color: rgb(43 40 40);
+  height: 1px;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+/* Public Projects */
 .public-projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.project-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 100px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
 }
 
-.public-projects-list div {
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.project-content {
   display: flex;
+  flex-direction: column;
+  padding: clamp(12px, 2vw, 24px);
+  flex-grow: 1;
+}
+
+.project-content span {
+  color: #E5C3C3;
+  font-size: 0.85em;
+}
+
+.project-title {
+  color: black;
+  margin: 0.5rem 0;
+  font-size: 1em;
+}
+
+.public-projects-list .project-description {
+  color: black;
+  margin: 0 0 1rem 0;
+  font-size: 0.75em;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.project-link {
+  margin-top: auto;
+  width: 100%;
+}
+
+.project-card button {
+  background-color: #5670E7;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #5670E7;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1em;
+}
+
+.project-card button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Private Projects */
+.private-projects-list .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding: 15px;
+  margin-bottom: 2rem;
   background-color: white;
   border-radius: 15px;
 }
 
-.public-projects-list div div {
+/* @media (max-width: 768px) {
+  .private-projects-list .info {
+    max-height: initial;
+  }
+} */
+
+.video-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .video-container {
+    width: 50%;
+  }
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-details {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 15px 15px;
-  padding-top: 35px;
-  width: 100%;
-}
-
-.public-projects-list img {
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-  width: 550px;
-  margin-bottom: 15px;
-}
-
-.public-projects-list span {
-  color: #E5C3C3;
-}
-
-.public-projects-list p {
+  padding: clamp(12px, 2vw, 24px);
+  flex-grow: 1;
   color: black;
-  margin-top: 0;
-  margin-bottom: 15px;
+  border-radius: 15px;
 }
 
-.public-projects-list button {
+.project-details span {
+  color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.project-name {
+  margin: 0.5rem 0;
+  color: #ffffff;
   background-color: #5670E7;
-  color: white;
-  text-align: center;
-  border: 0;
+  font-size: 0.85em;
+  padding: 5px 10px;
   border-radius: 5px;
-  padding: 10px 0;
-  width: 100%;
-  margin-bottom: 15px;
-  cursor: pointer;
-  transition: all .2s ease;
-  border: 1px solid #5670E7;
 }
 
-.public-projects-list button:hover {
-  background-color: white;
-  color: black;
+.project-details .project-description {
+  margin: 1rem 0;
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
-.private-projects-list .info {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 15px;
-}
-
-.private-projects-list video {
-  width: 50%;
-  margin-bottom: 60px;
-}
-
-.private-projects-list span {
-  color: #E5C3C3;
-  font-size: 0.9em;
-}
-
-.private-projects-list p:nth-child(2) {
-  margin-top: 10px;
-  color: #E5C3C3;
-}
-
-.private-projects-list p {
-  margin-top: 5px;
-  font-size: 0.9em;
-  margin-bottom: 15px;
-  line-height: 28px;
-}
-
-@media (max-width: 1365px) {
-  .public-projects-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .public-projects-list div {
-    flex-direction: column;
-  }
-
-  .public-projects-list div div {
-    width: fit-content;
-  }
-
-  .public-projects-list p{
-    max-width: 50ch;
-  }
-}
-
-@media (max-width: 1365px) {
+@media (max-width: 480px) {
   .projetos {
-    margin: 60px 15px;
-  }
-  .public-projects-list {
-    justify-content: center;
+    margin: 2rem 1rem;
   }
 
-  .public-projects-list img {
-    max-width: 550px;
+  .project-card img {
+    height: 200px;
+  }
+
+  .private-projects-list .info {
+    gap: 1rem;
   }
 }
 </style>
