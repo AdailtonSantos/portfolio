@@ -5,11 +5,12 @@
         <h1>SOBRE MIM</h1>
         <p>Atualmente cursando Análise e Desenvolvimento de Sistemas na Universidade Nove de Julho (Uninove). <br><br>
 
-          Trabalho há 2 anos com desenvolvimento web, focado no desenvolvimento de sites, sistemas e automações com
+          Trabalho há 2 e meio anos com desenvolvimento web, focado no desenvolvimento de sites, sistemas e automações com
           Puppeteer. <br><br>
           
-          Meus principais projetos foram trabalhos de WebScraping com Puppeteer
-          integrando com um CRM via API REST para o armazenamento e filtragem dos dados.</p>
+          Possuo diversos projetos desenvolvidos para clientes. Sempre participo integralmente do processo inteiro do desenvolvimento,
+          desde a reunião inicial para levantamento de requisitos, até o deploy, treinamento e suporte pós entrega do projeto. Busco sempre 
+          entender a fundo o negócio do cliente, para ser capaz de entregar valor em cada feature que eu desenvolver.</p>
       </section>
       <div class="info">
         <p>São Paulo / SP</p>
