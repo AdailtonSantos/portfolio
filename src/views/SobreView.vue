@@ -13,7 +13,7 @@
       </section>
       <div class="info">
         <p>São Paulo / SP</p>
-        <p>adailtonaparecido69@gmail.com</p>
+        <p>contato.adailtonapsantos@gmail.com</p>
       </div>
     </div>
   </section>
