@@ -1,10 +1,10 @@
 <template>
-  <section class="mobile-header">
+  <header role="banner" class="mobile-header">
     <section class="menu">
       <img src="logo.png" alt="logo-nome-soluciona">
       <i class="bi bi-list" @click="this.openMenu = true"></i>
     </section>
-  </section>
+  </header>
   <MobileMenuComponent @toggleVisibility="this.openMenu = false" v-if="this.openMenu"/>
 </template>
 
