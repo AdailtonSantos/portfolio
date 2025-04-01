@@ -1,13 +1,13 @@
 <template>
-  <section>
     <HeaderComponent />
     <MobileHeaderComponent />
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <Component :is="Component" />
-      </transition>
-    </router-view>
-  </section>
+    <main role="main">
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <Component :is="Component" />
+        </transition>
+      </router-view>
+    </main>
 </template>
 
 <script>
@@ -20,14 +20,7 @@ export default {
   components: {
     HeaderComponent,
     MobileHeaderComponent,
-  },
-  data() {
-    return {
-      routes: ['/', '/sobre', '/projetos'],
-    }
-  },
-  mounted() {},
-  methods: {}
+  }
 }
 
 </script>
@@ -47,8 +40,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: url('../public/background.jpg') repeat-y center center;
-  background-size: cover;
 }
 
 .fade-enter-from,
