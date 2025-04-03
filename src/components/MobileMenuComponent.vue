@@ -4,13 +4,14 @@
       @click="this.$emit('toggleVisibility')"></i>
     <img src="logo.png" alt="" />
     <div class="menu">
-      <span><a href="/">INÍCIO</a></span>
-      <span><a href="/sobre">SOBRE MIM</a></span>
-      <span><a href="/projetos">PROJETOS</a></span>
+      <span><a href="#inicio">INÍCIO</a></span>
+      <span><a href="#competencias">COMPETÊNCIAS</a></span>
+      <span><a href="#sobre">SOBRE MIM</a></span>
+      <span><a href="#projetos">PROJETOS</a></span>
       <span><a href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view">CURRICULO</a></span>
     </div>
     <p>CONTATO</p>
-    <span class="phones">(11) 95268-0986</span>
+    <span class="contact-email">contato.adailtonapsantos@gmail.com</span>
     <p>SOCIAL</p>
     <div class="social">
       <a href="https://www.linkedin.com/in/adailton-aparecido-dos-santos-751bb922b/" target="_blank"><i
@@ -96,6 +97,10 @@ section {
 
   section .social a {
     color: black;
+  }
+
+  .contact-email {
+    font-size: 0.8em;
   }
 }
 </style>
