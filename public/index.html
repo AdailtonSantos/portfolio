@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="icon" href="/images/favicon.ico">
   <title>
     Adailton Santos - Portfolio
   </title>
@@ -22,6 +22,50 @@
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
+
+  <div vw class="enabled">
+    <div vw-access-button class="active vlibras-button" tabindex="0" id="vlibras"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+    const vlibras = document.getElementById('vlibras');
+    vlibras.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // Previne comportamento padrão
+        vlibras.click(); // Simula o clique
+      }
+    });
+  </script>
 </body>
+<style>
+  .vlibras-button:focus {
+    border: 2px solid white !important;
+  }
+
+  #vlibras:focus::after {
+    content: "Tecle enter para abrir o Vlibras";
+    position: absolute;
+    left: -230%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    z-index: 999;
+  }
+
+  #vlibras:focus {
+    overflow: initial;
+
+  }
+</style>
 
 </html>
