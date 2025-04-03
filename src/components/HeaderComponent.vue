@@ -1,11 +1,11 @@
 <template>
   <header role="banner">
-    <img src="logo.png" alt="Nome do dono do portifólio, Adailton Santos">
+    <img src="/images/logo.png" alt="Nome do dono do portifólio, Adailton Santos">
     <nav role="navigation">
-      <router-link to="/">Início</router-link>
-      <router-link to="/competencias">Competências</router-link>
-      <router-link to="/sobre">Sobre mim</router-link>
-      <router-link to="/projetos">Projetos</router-link>
+      <a href="#inicio">Início</a>
+      <a href="#competencias">Competências</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#projetos">Projetos</a>
       <a href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view?usp=sharing"
         target="_blank">Curriculo</a>
       <a href="https://www.linkedin.com/in/adailton-aparecido-dos-santos-751bb922b/" target="_blank"
@@ -37,6 +37,14 @@ nav {
   align-items: center;
 }
 
+nav a {
+  transition: color .1s ease-in-out;
+}
+
+nav a:hover {
+  color: #274beb;
+}
+
 header * {
   color: black;
   text-decoration: none;
@@ -52,9 +60,16 @@ header .social {
 }
 
 header .social:hover {
-  border: 1px solid white;
+  border: 1px solid #274beb;
   border-radius: 15px;
   background-color: transparent
+}
+
+header .social:focus {
+  border: 1px solid #274beb;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #274beb;
 }
 
 @media (max-width: 959px) {
