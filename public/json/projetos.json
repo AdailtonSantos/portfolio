@@ -1,0 +1,54 @@
+[
+    {
+        "nome": "Soluciona Assessoria",
+        "descricao": "Site desenvolvido com VueJS, utilizando Vue Router e Transitions. Conta com um back-end em PHP e MySQL para listagem e inserção de posts no blog.",
+        "capa": "gifsProjetos/solucionasite.gif",
+        "acesso": "https://soluciona.inf.br",
+        "codigo": "https://github.com/AdailtonSantos/site-soluciona-assessoria",
+        "tecnologias": ["Vue.Js", "Vue Router", "MySQL", "PHP"]
+    },
+    {
+        "nome": "Músicas Brasileiras e suas Vertentes Artísticas",
+        "descricao": "Projeto acadêmico para divulgar uma exposição de alunos da FPA. O site apresenta a descrição do evento, os artistas participantes e suas obras.",
+        "capa": "gifsProjetos/musicasBrasileiras.gif",
+        "acesso": "https://musicas-brasileiras.vercel.app/",
+        "codigo": "https://github.com/ProjetoADsss/musicasBrasileiras",
+        "tecnologias": ["HTML", "CSS", "Javascript"]
+    },
+    {
+        "nome": "Real-Time Dólar",
+        "descricao": "Sistema para monitoramento do valor do Dólar em Real, utilizando SSE para atualizar os dados em tempo real e testar suas aplicações no front-end.",
+        "capa": "gifsProjetos/realtimedolar.png",
+        "acesso": "https://realtime-dolar.onrender.com/",
+        "codigo": "https://github.com/AdailtonSantos/sse-realtime-dolar",
+        "tecnologias": ["Node.Js", "SSE - Server Sent Events"]
+    },
+    {
+        "nome": "Cedray",
+        "descricao": "Site desenvolvido com VueJS e Vue Router, simulando um e-commerce. Permite selecionar produtos, adicionar ao carrinho e solicitar orçamento via WhatsApp.",
+        "capa": "gifsProjetos/cedraysite.gif",
+        "acesso": "https://cedray.com.br",
+        "codigo": "https://github.com/AdailtonSantos/site-cedray",
+        "tecnologias": ["Vue.Js", "Vue Router"]
+    },
+    {
+        "nome": "Loscrap",
+        "descricao": "Site desenvolvido antes do estudo em VueJS, utilizando apenas HTML e CSS para estruturar e estilizar o layout da página.",
+        "capa": "gifsProjetos/loscrapsite.gif",
+        "acesso": "https://loscrap.ind.br",
+        "tecnologias": ["HTML", "CSS"]
+    },
+    {
+        "nome": "Agendador de mensagens - Sistema interno",
+        "capa": "videosProjetos/agendador.mp4",
+        "descricao": "Sistema para agendar e enviar mensagens no WhatsApp via API não oficial. Permite configurar contatos, conteúdos e horários de envio, além de listar e gerenciar os agendamentos. Desenvolvido com NodeJS, VueJS, MySQL e API Evolution.",
+        "codigo": "https://github.com/AdailtonSantos/agendador_whatsapp",
+        "tecnologias": ["Evolution API", "Node.Js", "Vue.Js", "Vue Router", "MySql"]
+    },
+    {
+        "nome": "Sistema de Leilões - Desenvolvido para cliente",
+        "capa": "videosProjetos/leiloes.mp4",
+        "descricao": "Plataforma para gerenciamento de leilões, com agenda automatizada, histórico de ações, notificações e permissões personalizadas. Utiliza FullCalendar, NodeJS, VueJS e MySQL.",
+        "tecnologias": ["Node.Js", "Vue.Js", "Vue Router", "MySql", "Full Calendar", "Node Mailer"]
+    }
+]
