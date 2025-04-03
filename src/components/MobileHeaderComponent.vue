@@ -1,7 +1,7 @@
 <template>
   <header role="banner" class="mobile-header">
     <section class="menu">
-      <img src="logo.png" alt="logo-nome-soluciona">
+      <img src="/images/logo.png" alt="Imagem escrito 'Soluciona'">
       <i class="bi bi-list" @click="this.openMenu = true"></i>
     </section>
   </header>
