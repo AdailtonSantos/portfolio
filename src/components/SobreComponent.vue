@@ -52,6 +52,13 @@ export default {
   padding: 100px 0;
 }
 
+.principal {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
 h2 {
   text-align: center;
 }
@@ -90,10 +97,5 @@ span {
 .who-am-i {
   max-width: 60ch;
   line-height: 23px;
-}
-
-.principal {
-  display: flex;
-  justify-content: space-evenly;
 }
 </style>

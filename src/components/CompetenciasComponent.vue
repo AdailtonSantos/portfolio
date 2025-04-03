@@ -58,10 +58,12 @@ export default {
 </script>
 
 <style scoped>
-
 .topics {
   display: flex;
   justify-content: space-evenly;
+
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 h2 {
@@ -91,4 +93,14 @@ ul li::marker {
   color: #2463EB;
 }
 
+@media (max-width: 812px) {
+  .topics {
+    margin: 0 15px;
+  }
+
+  div {
+    width: 100%;
+  }
+
+}
 </style>

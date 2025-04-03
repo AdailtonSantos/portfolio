@@ -11,7 +11,7 @@
       <a aria-hidden="true" tabindex="-1" href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view" target="_blank"><button
           class="to-curriculum">Ver currículo</button></a>
     </div>
-    <img src="/images/perfil.jpeg"
+    <img class="perfil-image" src="/images/perfil.jpeg"
       alt="Foto do dono do portifólio. Um rapaz negro, utilizando tranças nagô e uma camisa social. Ele possui uma aliança no dedo. A foto está sendo tirada na frente de um espelho redondo.">
   </section>
 </template>
@@ -84,16 +84,13 @@ button.to-curriculum {
   border: 1px solid black;
 }
 
-img {
+.perfil-image {
   border-radius: 50%;
   width: 400px;
 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: float 4s ease-in-out infinite;
-}
-
-img {
   transform: scale(1.05);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -111,4 +108,16 @@ img {
   }
 }
 
+@media (max-width: 1086px) {
+  .principal {
+    flex-direction: column-reverse;
+    height: initial;
+    background-color: white;
+    margin: 0 15px;
+  }
+
+  .perfil-image {
+    width: 300px;
+  }
+}
 </style>

@@ -15,7 +15,7 @@
             {{ tecnologia }}
           </span><br><br>
         </div>
-        <div>
+        <div class="actions">
           <a v-if="projeto.acesso" :href="projeto.acesso" target="_blank"><i class="bi bi-eye-fill"></i> Ver projeto</a>&nbsp;
           <a v-if="projeto.codigo" :href="projeto.codigo" target="_blank"><i class="bi bi-github"></i> Código</a>
         </div>
@@ -121,5 +121,11 @@ export default {
 
 .principal a:hover {
   background: #0056b3;
+}
+
+@media (max-width: 384px) {
+  .actions a {
+    font-size: 3dvw;
+  }
 }
 </style>
