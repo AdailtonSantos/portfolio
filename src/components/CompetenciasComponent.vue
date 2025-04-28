@@ -5,6 +5,7 @@
       <div>
         <h3><i class="bi bi-code"> Backend</i></h3>
         <ul>
+          <li>Nest.Js</li>
           <li>Node.Js</li>
           <li>Express.Js</li>
           <li>Sequelize</li>

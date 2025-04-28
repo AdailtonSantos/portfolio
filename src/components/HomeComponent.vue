@@ -3,9 +3,8 @@
     <div class="content">
       <h1>Olá, meu nome é <span>Adailton Santos,</span><br>
         sou <span>Desenvolvedor Fullstack</span></h1>
-      <p>Possuo dois anos e meio de experiência como desenvolvedor, minha stack de desenvolvimento é VueJS e NodeJs e
-        atualmente estou
-        realizando um curso de C#.
+      <p>Possuo dois anos e meio de experiência como desenvolvedor, minha stack de desenvolvimento é Vue.js e Node.Js com Nest.Js e
+        atualmente estou realizando um curso de C#.
       </p>
       <a aria-hidden="true" tabindex="-1" href="#projetos"><button class="to-projects">Ver projetos</button></a>
       <a aria-hidden="true" tabindex="-1" href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view" target="_blank"><button
