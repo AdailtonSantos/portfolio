@@ -8,7 +8,7 @@
       <a href="#projetos">Projetos</a>
       <a href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view?usp=sharing"
         target="_blank">Curriculo</a>
-      <a href="https://www.linkedin.com/in/adailton-aparecido-dos-santos-751bb922b/" target="_blank"
+      <a href="https://www.linkedin.com/in/adailtonapsantos/" target="_blank"
         class="social">Linkedin</a>
       <a href="https://github.com/AdailtonSantos" target="_blank" class="social">GitHub</a>
     </nav>
