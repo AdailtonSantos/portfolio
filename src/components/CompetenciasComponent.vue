@@ -5,11 +5,13 @@
       <div>
         <h3><i class="bi bi-code"> Backend</i></h3>
         <ul>
-          <li>Nest.Js</li>
           <li>Node.Js</li>
+          <li>Nest.Js</li>
           <li>Express.Js</li>
           <li>Sequelize</li>
+          <li>TypeScript</li>
           <li>C#</li>
+          <li>.NET</li>
           <li>JWT</li>
           <li>Jest e Jest Puppeteer</li>
           <li>WebScraping</li>
@@ -39,8 +41,9 @@
         </ul>
       </div>
       <div>
-        <h3><i class="bi bi-terminal"> Aplicativos adicionais</i></h3>
+        <h3><i class="bi bi-terminal"> Aplicações adicionais</i></h3>
         <ul>
+          <li>Microsoft Azure Cloud</li>
           <li>N8N</li>
           <li>Typebot</li>
           <li>Zabbix</li>
