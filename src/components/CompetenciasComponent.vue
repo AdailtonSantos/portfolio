@@ -5,16 +5,15 @@
       <div>
         <h3><i class="bi bi-code"> Backend</i></h3>
         <ul>
-          <li>Node.Js</li>
           <li>Nest.Js</li>
+          <li>TypeORM</li>
+          <li>Node.Js</li>
           <li>Express.Js</li>
           <li>Sequelize</li>
           <li>TypeScript</li>
-          <li>C#</li>
-          <li>.NET</li>
           <li>JWT</li>
           <li>Jest e Jest Puppeteer</li>
-          <li>WebScraping</li>
+          <li>WebScraping com Puppeteer</li>
           <li>WebSocket</li>
           <li>Docker</li>
           <li>GIT</li>

@@ -2,6 +2,7 @@
   <HeaderComponent />
   <MobileHeaderComponent />
   <HomeComponent />
+  <Certificacoes />
   <CompetenciasComponent />
   <SobreComponent />
   <ProjetosComponent />
@@ -11,6 +12,7 @@
 import CompetenciasComponent from '@/components/CompetenciasComponent.vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import HomeComponent from '@/components/HomeComponent.vue';
+import Certificacoes from '@/components/Certificacoes.vue';
 import MobileHeaderComponent from '@/components/MobileHeaderComponent.vue';
 import SobreComponent from '@/components/SobreComponent.vue';
 import ProjetosComponent from '@/components/ProjetosComponent.vue';
@@ -22,6 +24,7 @@ export default {
     HeaderComponent,
     MobileHeaderComponent,
     HomeComponent,
+    Certificacoes,
     CompetenciasComponent,
     SobreComponent,
     ProjetosComponent,

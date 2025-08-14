@@ -1,0 +1,30 @@
+[
+  {
+    "titulo": "Microsoft Azure Cloud Native",
+    "emissor": "DIO",
+    "data": "Junho de 2025",
+    "imagem": "/certificados/dio.png",
+    "link": "https://exemplo.com/certificado"
+  },
+  {
+    "titulo": "Trabalhando com Azure Kubernets",
+    "emissor": "DIO",
+    "data": "Maio de 2025",
+    "imagem": "/certificados/dio.png",
+    "link": "https://exemplo.com/certificado"
+  },
+  {
+    "titulo": "Docker Fundamentals",
+    "emissor": "Teachable",
+    "data": "Fevereiro de 2025",
+    "imagem": "/certificados/teachable.jpg",
+    "link": "https://exemplo.com/certificado"
+  },
+  {
+    "titulo": "Treinamento Gravity Zone Security Enterprise",
+    "emissor": "SecuriSoft",
+    "data": "Abril de 2024",
+    "imagem": "/certificados/securisoft.jpg",
+    "link": "https://exemplo.com/certificado"
+  }
+]
