@@ -6,7 +6,7 @@
         <h3>Quem sou eu</h3>
         <p>
           Atualmente cursando Análise e Desenvolvimento de Sistemas na Universidade Nove de Julho (Uninove). <br>
-          Trabalho há dois anos e meio com desenvolvimento full-stack, buscando sempre aumentar o meu repertório de
+          Trabalho há {{ tempoExperiencia }} com desenvolvimento full-stack, buscando sempre aumentar o meu repertório de
           competências. <br><br>
 
           Possuo diversos projetos desenvolvidos para clientes. Sempre participo integralmente do processo de
@@ -42,6 +42,19 @@
 
 export default {
   name: 'SobreComponent',
+  computed: {
+    tempoExperiencia() {
+      const dataInicio = new Date("06-15-2022")
+      const dataAtual = new Date()
+      
+      const diferencaAnos = dataAtual.getFullYear() - dataInicio.getFullYear() + " anos"
+      if(dataInicio.getMonth() === dataAtual.getMonth()){
+        return `${diferencaAnos} e meio`
+      } else {
+        return diferencaAnos 
+      }
+    }
+  }
 }
 
 </script>
