@@ -9,8 +9,8 @@
       <a aria-hidden="true" tabindex="-1" href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view"
         target="_blank"><button class="to-curriculum">Ver currículo</button></a>
     </div>
-    <img class="perfil-image" src="/images/perfil.jpeg"
-      alt="Foto do dono do portifólio. Um rapaz negro, utilizando tranças nagô e uma camisa social. Ele possui uma aliança no dedo. A foto está sendo tirada na frente de um espelho redondo.">
+    <img class="perfil-image" src="/images/perfil.png"
+      alt="Foto do dono do portifólio. Um rapaz negro, com barba e com o cabelo curto, porém não raspado. Ele utuliza jaqueta clara de gola alta, fechada.">
   </section>
 </template>
 <script>
