@@ -1,20 +1,22 @@
 <template>
   <header role="banner" class="mobile-header">
-    <section class="menu">
-      <img src="/images/logo.png" alt="Imagem escrito 'Soluciona'">
-      <i class="bi bi-list" @click="this.openMenu = true"></i>
+    <section class="flex justify-around items-center w-full border-b border-white py-6">
+      <img src="/images/logo.png" alt="Imagem escrito 'Adailton Santos'" class="w-[220px]">
+      <Bars3Icon class="w-8 h-8 text-black cursor-pointer" @click="this.openMenu = true"/>
     </section>
   </header>
   <MobileMenuComponent @toggleVisibility="this.openMenu = false" v-if="this.openMenu"/>
 </template>
 
 <script>
+import { Bars3Icon } from '@heroicons/vue/24/solid';
 import MobileMenuComponent from './MobileMenuComponent.vue';
 
 export default {
   name: 'HeaderComponent',
   components: {
-    MobileMenuComponent
+    MobileMenuComponent,
+    Bars3Icon
   },
   data() {
     return {
@@ -29,42 +31,7 @@ export default {
   display: none
 }
 
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  border-bottom: 1px solid white;
-  padding: 25px 0;
-}
-
-.menu img {
-  width: 220px;
-}
-
-.contact-info-bar .button {
-  background-color: #E7CD56;
-  border: 1px solid #222220;
-  border-radius: 15px;
-  color: black;
-  padding: 5px 15px;
-  margin: auto 2px;
-  transition: all .2s;
-}
-
-.contact-info-bar .button:hover {
-  background-color: white;
-}
-
-.bi-list {
-  font-size: 2em;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 3px 5px;
-  background-color: white
-}
-
-@media (max-width: 959px) {
+@media (max-width: 1076px) {
   .mobile-header {
     display: block
   }

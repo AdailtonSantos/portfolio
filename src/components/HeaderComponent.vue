@@ -1,16 +1,18 @@
 <template>
-  <header role="banner">
+  <header role="banner" class="header md:flex justify-around items-center p-5 bg-white gap-4">
     <img src="/images/logo.png" alt="Nome do dono do portifólio, Adailton Santos">
-    <nav role="navigation">
-      <a href="#inicio">Início</a>
-      <a href="#competencias">Competências</a>
-      <a href="#sobre">Sobre mim</a>
-      <a href="#projetos">Projetos</a>
+    <nav role="navigation" class="flex gap-4 items-center font-bold">
+      <a href="#inicio" class="text-black hover:text-[#274beb] transition-colors duration-100">Início</a>
+      <a href="#especializacoes" class="text-black hover:text-[#274beb] transition-colors duration-100">Especializações</a>
+      <a href="#competencias" class="text-black hover:text-[#274beb] transition-colors duration-100">Competências</a>
+      <a href="#sobre" class="text-black hover:text-[#274beb] transition-colors duration-100">Sobre mim</a>
+      <a href="#projetos" class="text-black hover:text-[#274beb] transition-colors duration-100">Projetos</a>
       <a href="https://drive.google.com/file/d/1I2x4d1e9cJSbL8eYvnsnbAl19uWh8GQ-/view?usp=sharing"
-        target="_blank">Curriculo</a>
-      <a href="https://www.linkedin.com/in/adailtonapsantos/" target="_blank"
-        class="social">Linkedin</a>
-      <a href="https://github.com/AdailtonSantos" target="_blank" class="social">GitHub</a>
+        target="_blank" rel="noreferrer noopener" class="text-black hover:text-[#274beb] transition-colors duration-100">Curriculo</a>
+      <a href="https://www.linkedin.com/in/adailtonapsantos/" target="_blank" rel="noreferrer noopener"
+        class="bg-[#5670E7] px-6 py-2.5 rounded-2xl text-white hover:text-[var(--black)] border border-[#5670E7] transition-all duration-200 hover:bg-transparent hover:border-[#274beb] focus:bg-transparent focus:border-[#274beb] focus:text-[#274beb]">Linkedin</a>
+      <a href="https://github.com/AdailtonSantos" target="_blank" rel="noreferrer noopener"
+        class="bg-[#5670E7] px-6 py-2.5 rounded-2xl text-white hover:text-[var(--black)] border border-[#5670E7] transition-all duration-200 hover:bg-transparent hover:border-[#274beb] focus:bg-transparent focus:border-[#274beb] focus:text-[#274beb]">GitHub</a>
     </nav>
   </header>
 </template>
@@ -21,60 +23,14 @@ export default {
 }
 </script>
 
-<style scoped>
-header {
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  gap: 15px;
+<style>
+.header {
+  display: none;
 }
 
-nav {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-nav a {
-  transition: color .1s ease-in-out;
-}
-
-nav a:hover {
-  color: #274beb;
-}
-
-header * {
-  color: black;
-  text-decoration: none;
-}
-
-header .social {
-  background-color: #5670E7;
-  padding: 10px 25px;
-  border: 1px solid #5670E7;
-  border-radius: 15px;
-  transition: all .2s;
-  color: white;
-}
-
-header .social:hover {
-  border: 1px solid #274beb;
-  border-radius: 15px;
-  background-color: transparent
-}
-
-header .social:focus {
-  border: 1px solid #274beb;
-  border-radius: 15px;
-  background-color: transparent;
-  color: #274beb;
-}
-
-@media (max-width: 959px) {
-  header {
-    display: none;
+@media (min-width: 1077px) {
+  .header {
+    display: flex;
   }
 }
 </style>

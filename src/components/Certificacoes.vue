@@ -1,24 +1,20 @@
 <template>
-  <section class="certificates-section">
-    <h2>📜 Certificações</h2>
-    <div class="certificates-grid">
+  <section class="bg-[#f5f8ff] py-20 px-5" id="especializacoes">
+    <h2 class="text-center mb-8 text-[var(--primary-blue)] flex items-center justify-center gap-2 text-4xl font-bold">
+      <StarIcon class="w-10 h-10" />
+      Especializações
+    </h2>
+    <div class="flex flex-wrap justify-center gap-6">
       <div
         v-for="(cert, index) in certificados"
         :key="index"
-        class="certificate-card"
+        class="w-[400px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center justify-center text-center p-6"
       >
-        <img :src="cert.imagem" :alt="cert.titulo" class="certificate-image" />
-        <div class="certificate-info">
-          <h3>{{ cert.titulo }}</h3>
-          <span>Emitido por: {{ cert.emissor }}</span><br>
-          <span>Concluído em: {{ cert.data }}</span><br><br>
-          <a
-            :href="cert.link"
-            target="_blank"
-            class="btn-cert"
-          >
-            Ver certificado
-          </a>
+        <img :src="cert.imagem" :alt="cert.titulo" class="w-[30%] block" />
+        <div class="mt-4">
+          <h3 class="text-lg font-bold mb-2">{{ cert.titulo }}</h3>
+          <span class="text-sm text-gray-600">Emitido por: {{ cert.emissor }}</span><br>
+          <span class="text-sm text-gray-600">Concluído em: {{ cert.data }}</span><br><br>
         </div>
       </div>
     </div>
@@ -26,10 +22,14 @@
 </template>
 
 <script>
+import { StarIcon } from "@heroicons/vue/24/solid";
 import certificados from "../../public/json/certificados.json";
 
 export default {
   name: "CertificacoesComponent",
+  components: {
+    StarIcon
+  },
   data() {
     return {
       certificados
@@ -37,72 +37,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.certificates-section {
-  padding: 40px 20px;
-  background: #f5f8ff; /* tom claro igual ao fundo do seu portfólio */
-}
-
-.certificates-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #000;
-}
-
-.certificates-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.certificate-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 25px 0;
-}
-
-.certificate-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-.certificate-image {
-  width: 30%;
-  display: block;
-}
-
-.certificate-info h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.certificate-info span {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.btn-cert {
-  display: inline-block;
-  padding: 8px 14px;
-  background: #007bff;
-  color: white;
-  font-size: 0.9rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.btn-cert:hover {
-  background: #0056b3;
-}
-</style>

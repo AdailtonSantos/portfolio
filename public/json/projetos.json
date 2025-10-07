@@ -8,32 +8,25 @@
         "tecnologias": ["Vue.Js", "Vue Router", "MySQL", "PHP"]
     },
     {
-        "nome": "Músicas Brasileiras e suas Vertentes Artísticas",
-        "descricao": "Projeto acadêmico para divulgar uma exposição de alunos da FPA. O site apresenta a descrição do evento, os artistas participantes e suas obras.",
-        "capa": "gifsProjetos/musicasBrasileiras.gif",
-        "acesso": "https://musicas-brasileiras.vercel.app/",
-        "codigo": "https://github.com/ProjetoADsss/musicasBrasileiras",
-        "tecnologias": ["HTML", "CSS", "Javascript"]
-    },
-    {
         "nome": "Real-Time Dólar",
         "descricao": "Sistema para monitoramento do valor do Dólar em Real, utilizando SSE para atualizar os dados em tempo real e testar suas aplicações no front-end.",
-        "capa": "gifsProjetos/realtimedolar.png",
+        "capa": "fotosProjetos/realtimedolar.png",
         "acesso": "https://realtime-dolar.onrender.com/",
         "codigo": "https://github.com/AdailtonSantos/sse-realtime-dolar",
         "tecnologias": ["Node.Js", "SSE - Server Sent Events"]
     },
     {
-        "nome": "Agendador de mensagens - Sistema interno",
-        "capa": "videosProjetos/agendador.mp4",
-        "descricao": "Sistema para agendar e enviar mensagens no WhatsApp via API não oficial. Permite configurar contatos, conteúdos e horários de envio, além de listar e gerenciar os agendamentos. Desenvolvido com NodeJS, VueJS, MySQL e API Evolution.",
-        "codigo": "https://github.com/AdailtonSantos/agendador_whatsapp",
-        "tecnologias": ["Evolution API", "Node.Js", "Vue.Js", "Vue Router", "MySql"]
+        "nome": "LoopHouse",
+        "capa": "fotosProjetos/loophouse.png",
+        "descricao": "Plataforma para aluguel de imóveis, com funcionalidades de busca, filtro, detalhes do imóvel, possibilidade de dar lances, autenticação de usuários, painel administrativo e implementação de cache. Desenvolvido com NestJs, TypeORM, MySQL, VueJS e Vue Router.",
+        "acesso": "https://loophouse.soluciona.inf.br/",
+        "tecnologias": ["NestJs", "TypeORM", "MySQL", "VueJS", "Vue Router"]
     },
     {
-        "nome": "Sistema de Leilões - Desenvolvido para cliente",
-        "capa": "videosProjetos/leiloes.mp4",
-        "descricao": "Plataforma para gerenciamento de leilões, com agenda automatizada, histórico de ações, notificações e permissões personalizadas. Utiliza FullCalendar, NodeJS, VueJS e MySQL.",
-        "tecnologias": ["Node.Js", "Vue.Js", "Vue Router", "MySql", "Full Calendar", "Node Mailer"]
+        "nome": "Agendador de mensagens - Sistema interno",
+        "capa": "videosProjetos/agendador.mp4",
+        "descricao": "Sistema para agendar e enviar mensagens no WhatsApp via API não oficial. Permite configurar contatos, conteúdos e horários de envio, além de listar e gerenciar os agendamentos. Desenvolvido com NodeJS, VueJS, MySQL e Evolution Api.",
+        "codigo": "https://github.com/AdailtonSantos/agendador_whatsapp",
+        "tecnologias": ["Evolution API", "Node.Js", "Vue.Js", "Vue Router", "MySql"]
     }
 ]

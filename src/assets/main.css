@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+--white: #ffffffff;
+--black: #191717;
+--primary-blue: #2463EB;
+--gray: #938686;
+--font-montserrat: 'Montserrat', sans-serif;
+--font-lato: 'Lato', sans-serif;
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(-2deg);
+      box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+    }
+    50% {
+      transform: translateY(-8px) rotate(2deg);
+      box-shadow: 0px 6px 5px rgba(0,0,0,0.3);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+    will-change: transform, box-shadow;
+  }
+
+  /* variação mais lenta/rápida se quiser */
+  .animate-float-slow { animation: float 5s ease-in-out infinite; }
+  .animate-float-fast { animation: float 1.6s ease-in-out infinite; }
+}
