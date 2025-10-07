@@ -17,7 +17,7 @@
     },
     {
         "nome": "LoopHouse",
-        "capa": "fotosProjetos/loophouse.png",
+        "capa": "fotosProjetos/loopHouse.png",
         "descricao": "Plataforma para aluguel de imóveis, com funcionalidades de busca, filtro, detalhes do imóvel, possibilidade de dar lances, autenticação de usuários, painel administrativo e implementação de cache. Desenvolvido com NestJs, TypeORM, MySQL, VueJS e Vue Router.",
         "acesso": "https://loophouse.soluciona.inf.br/",
         "tecnologias": ["NestJs", "TypeORM", "MySQL", "VueJS", "Vue Router"]
